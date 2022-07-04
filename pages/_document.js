@@ -16,12 +16,7 @@ export default function Document() {
           />
           {/* Disable tap highlight on IE */}
           <meta name="msapplication-tap-highlight" content="no" />
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/apple-icon-180x180.png"
-          />
-          <link href="./assets/favicon.ico" rel="icon" />
+          <link href="/favicon.ico" rel="icon" />
           <title>Renaldi Sigit Pratama</title>
           <link href="./main.d8e0d294.css" rel="stylesheet" />
         </div>
