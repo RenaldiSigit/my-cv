@@ -9,47 +9,47 @@ export default function Home({ web }) {
       <div>
         <div
           className="background-color-layer"
-          style={{ backgroundImage: `url(${web.dbWeb[0].img})` }}
+          style={{ backgroundImage: `url(${web.dbWeb[0].home.img})` }}
         />
         <main className="content-wrapper">
           <header className="white-text-container section-container">
             <div className="text-center">
-              <h1>{web.dbWeb[1].title}</h1>
-              <p>{web.dbWeb[1].desc}</p>
+              <h1>{web.dbWeb[0].HeadTitle.title}</h1>
+              <p>{web.dbWeb[0].HeadTitle.desc}</p>
               <p>
                 <a
                   className="fa-icon fa-icon-2x"
-                  href={web.dbWeb[1].sosmed.item[0].url}
+                  href={web.dbWeb[0].HeadTitle.sosmed.item[0].url}
                 >
-                  <i className={web.dbWeb[1].sosmed.item[0].icon} />
+                  <i className={web.dbWeb[0].HeadTitle.sosmed.item[0].icon} />
                 </a>
                 <a
                   className="fa-icon fa-icon-2x"
-                  href={web.dbWeb[1].sosmed.item[1].url}
+                  href={web.dbWeb[0].HeadTitle.sosmed.item[0].url}
                   title
                 >
-                  <i className={web.dbWeb[1].sosmed.item[1].icon} />
+                  <i className={web.dbWeb[0].HeadTitle.sosmed.item[0].icon} />
                 </a>
                 <a
                   className="fa-icon fa-icon-2x"
-                  href={web.dbWeb[1].sosmed.item[2].url}
+                  href={web.dbWeb[0].HeadTitle.sosmed.item[2].url}
                   title
                 >
-                  <i className={web.dbWeb[1].sosmed.item[2].icon} />
+                  <i className={web.dbWeb[0].HeadTitle.sosmed.item[2].icon} />
                 </a>
                 <a
                   className="fa-icon fa-icon-2x"
-                  href={web.dbWeb[1].sosmed.item[3].url}
+                  href={web.dbWeb[0].HeadTitle.sosmed.item[3].url}
                   title
                 >
-                  <i className={web.dbWeb[1].sosmed.item[3].icon} />
+                  <i className={web.dbWeb[0].HeadTitle.sosmed.item[3].icon} />
                 </a>
                 <a
                   className="fa-icon fa-icon-2x"
-                  href={web.dbWeb[1].sosmed.item[4].url}
+                  href={web.dbWeb[0].HeadTitle.sosmed.item[4].url}
                   title
                 >
-                  <i className={web.dbWeb[1].sosmed.item[4].icon} />
+                  <i className={web.dbWeb[0].HeadTitle.sosmed.item[4].icon} />
                 </a>
               </p>
             </div>
@@ -60,48 +60,48 @@ export default function Home({ web }) {
               <div className="col-xs-12">
                 <div className="card">
                   <div className="card-block">
-                    <h2>{web.dbWeb[2].Tittle}</h2>
+                    <h2>{web.dbWeb[0].AboutMe.Tittle}</h2>
                     <div className="row">
                       <div className="col-md-4">
                         <p>
                           <img
-                            src={web.dbWeb[2].img}
+                            src={web.dbWeb[0].AboutMe.img}
                             className="img-responsive"
                             alt
                           />
                         </p>
                       </div>
                       <div className="col-md-8">
-                        <p>{web.dbWeb[2].Desc}</p>
+                        <p>{web.dbWeb[0].AboutMe.Desc}</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="card">
                   <div className="card-block">
-                    <h2>{web.dbWeb[3].name}</h2>
+                    <h2>{web.dbWeb[0].Language.name}</h2>
                     <div className="row">
                       <div className="col-md-4">
                         <div className="language-experience">
                           <h3 className="h5">
-                            {web.dbWeb[3].items[0].name}{" "}
-                            <small>{web.dbWeb[3].items[0].desc}</small>
+                            {web.dbWeb[0].Language.items[0].name}{" "}
+                            <small>{web.dbWeb[0].Language.items[0].desc}</small>
                           </h3>
                         </div>
                       </div>
                       <div className="col-md-4">
                         <div className="language-experience">
                           <h3 className="h5">
-                            {web.dbWeb[3].items[1].name}{" "}
-                            <small>{web.dbWeb[3].items[1].desc}</small>
+                            {web.dbWeb[0].Language.items[1].name}{" "}
+                            <small>{web.dbWeb[0].Language.items[1].desc}</small>
                           </h3>
                         </div>
                       </div>
                       <div className="col-md-4">
                         <div className="language-experience">
                           <h3 className="h5">
-                            {web.dbWeb[3].items[2].name}{" "}
-                            <small>{web.dbWeb[3].items[2].desc}</small>
+                            {web.dbWeb[0].Language.items[2].name}{" "}
+                            <small>{web.dbWeb[0].Language.items[2].desc}</small>
                           </h3>
                         </div>
                       </div>
@@ -110,7 +110,7 @@ export default function Home({ web }) {
                 </div>
                 <div className="card">
                   <div className="card-block">
-                    <h2>{web.dbWeb[4].name}</h2>
+                    <h2>{web.dbWeb[0].Projects.name}</h2>
                     <div
                       id="carousel-example-generic"
                       className="carousel slide"
@@ -120,41 +120,41 @@ export default function Home({ web }) {
                       <div className="carousel-inner" role="listbox">
                         <div className="item active">
                           <img
-                            src={web.dbWeb[4].slider[0].url}
+                            src={web.dbWeb[0].Projects.slider[0].url}
                             className="img-responsive"
                             alt="..."
                           />
                           <div className="carousel-caption">
                             <h3 className="h5">
-                              {web.dbWeb[4].slider[0].title}
+                              {web.dbWeb[0].Projects.slider[0].title}
                             </h3>
-                            <p>{web.dbWeb[4].slider[0].date}</p>
+                            <p>{web.dbWeb[0].Projects.slider[0].date}</p>
                           </div>
                         </div>
                         <div className="item">
                           <img
-                            src={web.dbWeb[4].slider[1].url}
+                            src={web.dbWeb[0].Projects.slider[1].url}
                             className="img-responsive"
                             alt="..."
                           />
                           <div className="carousel-caption">
                             <h3 className="h5">
-                              {web.dbWeb[4].slider[1].title}
+                              {web.dbWeb[0].Projects.slider[1].title}
                             </h3>
-                            <p>{web.dbWeb[4].slider[1].date}</p>
+                            <p>{web.dbWeb[0].Projects.slider[1].date}</p>
                           </div>
                         </div>
                         <div className="item">
                           <img
-                            src={web.dbWeb[4].slider[2].url}
+                            src={web.dbWeb[0].Projects.slider[2].url}
                             className="img-responsive"
                             alt="..."
                           />
                           <div className="carousel-caption">
                             <h3 className="h5">
-                              {web.dbWeb[4].slider[2].title}
+                              {web.dbWeb[0].Projects.slider[2].title}
                             </h3>
-                            <p>{web.dbWeb[4].slider[2].date}</p>
+                            <p>{web.dbWeb[0].Projects.slider[2].date}</p>
                           </div>
                         </div>
                       </div>
@@ -179,35 +179,44 @@ export default function Home({ web }) {
                 </div>
                 <div className="card">
                   <div className="card-block">
-                    <h2>{web.dbWeb[5].name}</h2>
+                    <h2>{web.dbWeb[0].SocialNetwork.name}</h2>
                     <div className="row">
                       <div className="col-md-3">
                         <p className="social-buttons">
-                          <a href={web.dbWeb[5].item[0].url} title>
+                          <a
+                            href={web.dbWeb[0].SocialNetwork.item[0].url}
+                            title
+                          >
                             <span className="social-round-icon fa-icon">
                               <i className="fa fa-twitter" />
                             </span>
-                            {web.dbWeb[5].item[0].userAcc}
+                            {web.dbWeb[0].SocialNetwork.item[0].userAcc}
                           </a>
                         </p>
                       </div>
                       <div className="col-md-3">
                         <p className="social-buttons">
-                          <a href={web.dbWeb[5].item[1].url} title>
+                          <a
+                            href={web.dbWeb[0].SocialNetwork.item[1].url}
+                            title
+                          >
                             <span className="social-round-icon fa-icon">
                               <i className="fa fa-linkedin" />
                             </span>
-                            {web.dbWeb[5].item[1].userAcc}
+                            {web.dbWeb[0].SocialNetwork.item[1].userAcc}
                           </a>
                         </p>
                       </div>
                       <div className="col-md-3">
                         <p className="social-buttons">
-                          <a href={web.dbWeb[5].item[2].url} title>
+                          <a
+                            href={web.dbWeb[0].SocialNetwork.item[2].url}
+                            title
+                          >
                             <span className="social-round-icon fa-icon">
                               <i className="fa fa-github" />
                             </span>
-                            {web.dbWeb[5].item[2].userAcc}
+                            {web.dbWeb[0].SocialNetwork.item[2].userAcc}
                           </a>
                         </p>
                       </div>
@@ -216,14 +225,14 @@ export default function Home({ web }) {
                 </div>
                 <div className="card">
                   <div className="card-block">
-                    <h2>{web.dbWeb[6].Title}</h2>
+                    <h2>{web.dbWeb[0].contact.Title}</h2>
                     <form action className="reveal-content">
                       <div className="form-group">
                         <input
                           type="email"
                           className="form-control"
                           id="email"
-                          placeholder={web.dbWeb[6].form[0].placeholder}
+                          placeholder={web.dbWeb[0].contact.form[0].placeholder}
                         />
                       </div>
                       <div className="form-group">
@@ -231,20 +240,20 @@ export default function Home({ web }) {
                           type="text"
                           className="form-control"
                           id="subject"
-                          placeholder={web.dbWeb[6].form[1].placeholder}
+                          placeholder={web.dbWeb[0].contact.form[1].placeholder}
                         />
                       </div>
                       <div className="form-group">
                         <textarea
                           className="form-control"
                           rows={5}
-                          placeholder={web.dbWeb[6].form[2].placeholder}
+                          placeholder={web.dbWeb[0].contact.form[2].placeholder}
                           defaultValue={""}
                         />
                       </div>
                       <div className="form-group">
                         <button type="submit" className=" btn btn-primary">
-                          {web.dbWeb[6].ButtonForm.value}
+                          {web.dbWeb[0].contact.ButtonForm.value}
                         </button>
                       </div>
                     </form>
@@ -261,42 +270,42 @@ export default function Home({ web }) {
                 {/* <p>
           <img src="./assets/images/mashup-icon.svg" alt />
         </p> */}
-                <p>{web.dbWeb[7].name}</p>
-                <p>{web.dbWeb[7].value}</p>
+                <p>{web.dbWeb[0].footer.name}</p>
+                <p>{web.dbWeb[0].footer.value}</p>
                 <p>
                   <a
                     className="fa-icon fa-icon-2x"
-                    href={web.dbWeb[1].sosmed.item[0].url}
+                    href={web.dbWeb[0].HeadTitle.sosmed.item[0].url}
                   >
-                    <i className={web.dbWeb[1].sosmed.item[0].icon} />
+                    <i className={web.dbWeb[0].HeadTitle.sosmed.item[0].icon} />
                   </a>
                   <a
                     className="fa-icon fa-icon-2x"
-                    href={web.dbWeb[1].sosmed.item[1].url}
+                    href={web.dbWeb[0].HeadTitle.sosmed.item[0].url}
                     title
                   >
-                    <i className={web.dbWeb[1].sosmed.item[1].icon} />
+                    <i className={web.dbWeb[0].HeadTitle.sosmed.item[0].icon} />
                   </a>
                   <a
                     className="fa-icon fa-icon-2x"
-                    href={web.dbWeb[1].sosmed.item[2].url}
+                    href={web.dbWeb[0].HeadTitle.sosmed.item[2].url}
                     title
                   >
-                    <i className={web.dbWeb[1].sosmed.item[2].icon} />
+                    <i className={web.dbWeb[0].HeadTitle.sosmed.item[2].icon} />
                   </a>
                   <a
                     className="fa-icon fa-icon-2x"
-                    href={web.dbWeb[1].sosmed.item[3].url}
+                    href={web.dbWeb[0].HeadTitle.sosmed.item[3].url}
                     title
                   >
-                    <i className={web.dbWeb[1].sosmed.item[3].icon} />
+                    <i className={web.dbWeb[0].HeadTitle.sosmed.item[3].icon} />
                   </a>
                   <a
                     className="fa-icon fa-icon-2x"
-                    href={web.dbWeb[1].sosmed.item[4].url}
+                    href={web.dbWeb[0].HeadTitle.sosmed.item[4].url}
                     title
                   >
-                    <i className={web.dbWeb[1].sosmed.item[4].icon} />
+                    <i className={web.dbWeb[0].HeadTitle.sosmed.item[4].icon} />
                   </a>
                 </p>
               </div>
